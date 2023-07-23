@@ -1,16 +1,82 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
+  <body>
+    <div id="app"></div>
+    <h1>Demo example practice</h1>
+    <h2>table example section</h2>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Order Id</th>
+            <th>Order Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>USA</td>
+            <td>1000</td>
+            <td>$1,300</td>
+          </tr>
+          <tr>
+            <td>CA</td>
+            <td>1001</td>
+            <td>$7898</td>
+          </tr>
+          <tr>
+            <td>canada</td>
+            <td>1002</td>
+            <td>$7898</td>
+          </tr>
+          <tr>
+            <td>CAlifornia</td>
+            <td>1003</td>
+            <td>$7898o</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Total</td>
+            <td>$78556</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <h2>smoot shadow box</h2>
 
-<body>
-	<div id="app"></div>
+    <div class="smoothShadow">
+      <p>it's a smooth shadow</p>
+    </div>
+    <h2>image resolution example</h2>
+    <section class="hubble">
+      <picture>
+        <source
+          media="(min-width:1440px )"
+          srcset="./src/images/background_w1440.jpg"
+        />
+        <source
+          media="(min-width:1228px )"
+          srcset="./src/images/background_w1228.jpg"
+        />
+        <source
+          media="(min-width:350px  )"
+          srcset="./src/images/background_w853.jpg"
+        />
 
-	<script src="src/index.js">
-	</script>
-</body>
+        <img src="./src//images/background_w320.jpg" alt="backgroud img" />
+      </picture>
 
+      <h1>Hubble Space Telescope</h1>
+      <p>30 years of discovery</p>
+    </section>
+
+    <script src="src/index.js"></script>
+  </body>
 </html>
