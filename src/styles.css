@@ -1,3 +1,69 @@
 body {
   font-family: sans-serif;
 }
+
+table {
+  border-collapse: collapse;
+}
+thead th {
+  background-color: dodgerblue;
+  color: white;
+  padding: 5px;
+}
+
+tbody > tr td {
+  padding: 5px;
+}
+tbody > tr:nth-child(even) {
+  background-color: #eef7ff;
+}
+tfoot {
+  color: white;
+  background-color: dodgerblue;
+}
+
+/* ---------------------------------------- */
+.smoothShadow {
+  width: 300px;
+  height: 300px;
+  background-color: crimson;
+  color: #eef7ff;
+  font-weight: bold;
+  box-shadow: 0 0 30px 5px darkmagenta;
+  margin: 0 auto;
+  border-radius: 20px;
+  text-align: center;
+  text-shadow: -5px 5px 4px black;
+}
+/* ********************************************** */
+.hubble {
+  width: 100vw;
+  /* height: 100vh; */
+  background: url("./images/background_w1440.jpg");
+}
+
+.hubble {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color:white;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hubble > p{
+  background-color: lightslategrey;
+  padding: 5px;
+  border-radius: 5px;
+ 
+}
+.hubble > picture {
+ 
+  position: absolute;
+  z-index: -1;
+  
+  
+}
